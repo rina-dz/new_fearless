@@ -1,0 +1,58 @@
+.bands {
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 980px;
+    margin: 0;
+}
+
+.bands__img {
+    width: 300px;
+    height: 980px;
+    cursor: pointer;
+    margin: 0;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.bands__first-img {
+    background-image: url('../../images/bands/band1_default.png');
+}
+
+.bands__first-img:hover {
+    background-image: url('../../images/bands/band1_hovered.png');
+}
+
+.bands__second-img {
+    background-image: url('../../images/bands/band2_default.png');
+}
+
+.bands__second-img:hover {
+    background-image: url('../../images/bands/band2_hovered.png');
+}
+
+.bands__third-img {
+    background-image: url('../../images/bands/band3_default.png');
+}
+
+.bands__third-img:hover {
+    background-image: url('../../images/bands/band3_hovered.png');
+}
+
+.bands__fourth-img {
+    background-image: url('../../images/bands/band4_default.png');
+}
+
+.bands__fourth-img:hover {
+    background-image: url('../../images/bands/band4_hovered.png');
+}
+
+.bands__fifth-img {
+    background-image: url('../../images/bands/band5_default.png');
+}
+
+.bands__fifth-img:hover {
+    background-image: url('../../images/bands/band5_hovered.png');
+}

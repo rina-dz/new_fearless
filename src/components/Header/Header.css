@@ -1,4 +1,123 @@
 .header {
     height: 100px;
+    width: 100%;
     background-color: rgb(1, 1, 1);
+}
+
+.header__logo {
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.header__main-container {
+    height: 100%;
+    width: 78.14%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header__main-logo {
+    width: 127.43px;
+    height: 33.15px;
+    background-image: url('../../images/header__logo.svg');
+}
+
+
+
+.header__functional-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.header__search {
+    width: 674px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: auto 210px auto 0;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.header__search-input {
+    color: rgb(79, 79, 79);
+    background-color: rgb(1, 1, 1);;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: left;
+    height: 60px;
+    width: 614px;
+    border: none;
+    padding: 0;
+    margin: 0 30px;
+}
+
+.header__search-input:focus {
+    outline: none;
+}
+
+.header__search-button {
+    width: 15.4px;
+    height: 15.4px;
+    margin-right: 24.4px;
+    align-self: center;
+}
+
+
+
+.header__main-nav {
+    height: 100%;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__profile-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url('../../images/account-logo__default.svg');
+}
+
+.header__profile-link:hover {
+    background-image: url('../../images/account-logo__hovered.svg');
+}
+
+.header__bag-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url('../../images/bag-logo__default.svg');
+}
+
+.header__bag-link:hover {
+    background-image: url('../../images/bag-logo__hovered.svg');
+}
+
+.header__menu-link {
+    width: 35px;
+    height: 27px;
+    border: none;
+    padding: 0;
+    background-image: url('../../images/menu-logo.svg');
 }

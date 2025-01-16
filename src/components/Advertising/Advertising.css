@@ -1,0 +1,18 @@
+.ad {
+    width: 1500px;
+    height: 300px;
+    position: relative;
+    background-image: url('../../images/advertising.png');
+    background-size: cover;
+    background-color: transparent;
+    margin: 95px auto 0;
+}
+
+.ad__button {
+    width: 309px;
+    height: 80px;
+    position: absolute;
+    bottom: 31px;
+    left: 53.22px;
+    cursor: pointer;
+}

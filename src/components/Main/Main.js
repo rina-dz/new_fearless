@@ -11,6 +11,7 @@ function Main(props) {
         <Header />
         <Bands />
         <Advertising />
+        <Footer />
         </>
     )
 }

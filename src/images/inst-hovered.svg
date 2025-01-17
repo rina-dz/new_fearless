@@ -1,0 +1,37 @@
+<svg width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_374_2176_dd" x="0.000000" y="0.000000" width="44.000000" height="44.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<radialGradient gradientTransform="translate(17.3829 36.026) rotate(0) scale(44.8753 44.8753)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_374_2177_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFDD55"/>
+			<stop offset="0.328000" stop-color="#FF543F"/>
+			<stop offset="0.348000" stop-color="#FC5245"/>
+			<stop offset="0.504000" stop-color="#E64771"/>
+			<stop offset="0.643000" stop-color="#D53E91"/>
+			<stop offset="0.761000" stop-color="#CC39A4"/>
+			<stop offset="0.841000" stop-color="#C837AB"/>
+		</radialGradient>
+		<radialGradient gradientTransform="translate(9.79295 -0.449455) rotate(0) scale(29.7973 19.8539)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_374_2178_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#4168C9"/>
+			<stop offset="0.999000" stop-color="#4168C9" stop-opacity="0.000000"/>
+		</radialGradient>
+	</defs>
+	<g filter="url(#filter_374_2176_dd)">
+		<path id="Vector" d="M32.01 35.98L12.02 36C7.62 36 4.02 32.41 4.01 28.01L4 8.02C3.99 3.62 7.58 0.02 11.98 0.01L31.97 0C36.37 -0.01 39.97 3.58 39.98 7.98L40 27.97C40 32.37 36.41 35.97 32.01 35.98Z" fill="url(#paint_radial_374_2177_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M32.01 35.98L12.02 36C7.62 36 4.02 32.41 4.01 28.01L4 8.02C3.99 3.62 7.58 0.02 11.98 0.01L31.97 0C36.37 -0.01 39.97 3.58 39.98 7.98L40 27.97C40 32.37 36.41 35.97 32.01 35.98Z" fill="url(#paint_radial_374_2178_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M22 24.99C18.14 24.99 15 21.85 15 18C15 14.14 18.14 11 22 11C25.85 11 28.99 14.14 28.99 18C28.99 21.85 25.85 24.99 22 24.99ZM22 13C19.24 13 17 15.24 17 18C17 20.75 19.24 22.99 22 22.99C24.75 22.99 26.99 20.75 26.99 18C26.99 15.24 24.75 13 22 13Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M30.99 10.5C30.99 11.33 30.32 12 29.49 12C28.66 12 27.99 11.33 27.99 10.5C27.99 9.67 28.66 9 29.49 9C30.32 9 30.99 9.67 30.99 10.5Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M27.99 30.99L16 30.99C12.14 30.99 9 27.85 9 23.99L9 12C9 8.14 12.14 5 16 5L27.99 5C31.85 5 34.99 8.14 34.99 12L34.99 23.99C34.99 27.85 31.85 30.99 27.99 30.99ZM16 7C13.24 7 11 9.24 11 12L11 23.99C11 26.75 13.24 28.99 16 28.99L27.99 28.99C30.75 28.99 32.99 26.75 32.99 23.99L32.99 12C32.99 9.24 30.75 7 27.99 7L16 7Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

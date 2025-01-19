@@ -16,6 +16,8 @@ function Header(props) {
         value ? changeButtonVisibility(true) : changeButtonVisibility(false);
     }
 
+    //onFocus={() => {changeButtonVisibility(true)}}
+
     return (
         <header className='header'>
             <div className='header__main-container'>
@@ -37,7 +39,7 @@ function Header(props) {
                             <Link className='header__bag-link header__logo' to="/my-bag" />
                         </li>
                         <li>
-                            <button className='header__menu-link header__logo' />
+                            <button className='header__menu-link header__logo' onClick={props.openMenu} />
                         </li>
                     </ul>
                 </div>

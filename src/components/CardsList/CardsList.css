@@ -1,0 +1,54 @@
+.list {
+    width: min-content;
+    margin: 0 auto 95px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+}
+
+.list__title {
+    color: rgb(14, 14, 14);
+    font-family: Unbounded;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 45px;
+    width: max-content;
+    margin: 0 auto 50px 0px;
+}
+
+.list__button {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 0px;
+    padding: 0;
+    border: none;
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('../../images/arrow-default.svg');
+}
+
+.list__button:hover {
+    background-image: url('../../images/arrow-hovered.svg');
+}
+
+.list__button:active {
+    background-image: url('../../images/arrow-clicked.svg');
+}
+
+.list__left-arrow {
+    margin-right: 15px;
+    transform: rotate(180deg);
+}
+
+.list__right-arrow {
+    margin-right: 82px;
+}
+
+.list__cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 37.5px;
+    width: min-content;
+}

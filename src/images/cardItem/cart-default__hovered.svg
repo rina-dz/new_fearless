@@ -1,0 +1,19 @@
+<svg width="34.000000" height="34.000000" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip374_2097">
+			<rect id="Property 1=Variant2" rx="0.000000" width="33.000000" height="33.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip374_2097)">
+		<path id="Vector" d="M-61.6 9.32L-44.43 9.32C-43.72 9.32 -43.17 9.94 -43.26 10.64L-44.14 17.73C-44.22 18.32 -44.72 18.77 -45.32 18.77L-48.34 18.77L-56.75 18.77L-58.45 18.77" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M-65.54 6.95L-62.9 6.95C-62.37 6.95 -61.9 7.31 -61.76 7.83L-58.1 21.44C-57.96 21.95 -57.49 22.31 -56.96 22.31L-45.46 22.31" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M-56.09 27.04C-56.74 27.04 -57.27 26.51 -57.27 25.86C-57.27 25.2 -56.74 24.67 -56.09 24.67C-55.44 24.67 -54.91 25.2 -54.91 25.86C-54.91 26.51 -55.44 27.04 -56.09 27.04Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M-47.23 27.04C-47.88 27.04 -48.41 26.51 -48.41 25.86C-48.41 25.2 -47.88 24.67 -47.23 24.67C-46.58 24.67 -46.05 25.2 -46.05 25.86C-46.05 26.51 -46.58 27.04 -47.23 27.04Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M-54.91 13.46L-52.41 15.96L-47.9 11.51" stroke="#FF254C" stroke-opacity="1.000000" stroke-width="1.000000"/>
+		<path id="Vector" d="M-34.14 16.03L-25.33 24.84L-9.46 9.15" stroke="#FF254C" stroke-opacity="1.000000" stroke-width="1.000000"/>
+		<path id="+" d="M25.76 17.4C25.76 17.55 25.68 17.62 25.53 17.62C25.41 17.62 25.32 17.61 25.24 17.57L17.22 17.57L14.59 25.07C14.51 25.34 14.36 25.47 14.13 25.47C13.9 25.47 13.67 25.37 13.45 25.18C13.25 24.95 13.16 24.71 13.16 24.44C14 21.65 14.72 19.36 15.33 17.57L9.09 17.57C8.52 17.57 8.23 17.17 8.23 16.37C8.23 16.14 8.35 15.98 8.58 15.91C8.81 15.83 9.76 15.79 11.44 15.79C13.16 15.79 14.65 15.81 15.91 15.85C17.62 10.96 18.64 8.52 18.94 8.52C19.25 8.52 19.5 8.64 19.69 8.86C19.92 9.09 20.03 9.34 20.03 9.61L17.8 15.85L24.9 16.14C25.47 16.17 25.76 16.59 25.76 17.4Z" fill="#FF2048" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

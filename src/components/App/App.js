@@ -3,8 +3,6 @@ import Main from '../Main/Main';
 import NotFound from '../NotFound/NotFound';
 import Header from '../Header/Header';
 import MenuPopup from '../MenuPopup/MenuPopup';
-
-
 import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import CurrentUserContext from '../../contexts/CurrentUserContext.js';

@@ -1,5 +1,7 @@
 .list {
     width: min-content;
+    max-width: 100%;
+    overflow: hidden;
     margin: 0 auto 95px;
     display: flex;
     flex-flow: row wrap;

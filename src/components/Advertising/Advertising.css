@@ -1,18 +1,23 @@
 .ad {
-    width: 1500px;
-    height: 300px;
+    width: 78.13vw;
+    max-width: 1500px;
+    height: 15vw;
+    max-height: 300px;
     position: relative;
     background-image: url('../../images/advertising.png');
     background-size: cover;
     background-color: transparent;
-    margin: 95px auto 0;
+    border-radius: 20px;
+    margin: 0 auto;
 }
 
 .ad__button {
-    width: 309px;
-    height: 80px;
+    width: 20.6%;
+    max-width: 309px;
+    height: 4.1vw;
+    max-height: 80px;
     position: absolute;
-    bottom: 31px;
-    left: 53.22px;
+    bottom: 6.7%;
+    left: 3.55%;
     cursor: pointer;
 }

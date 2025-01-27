@@ -1,8 +1,10 @@
 .footer {
+    width: 78.13vw;
+    max-width: 1500px;
     margin: 65px auto 30px;
-    width: min-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 a {
@@ -10,7 +12,8 @@ a {
 }
 
 .footer__main-container {
-    width: 1500px;
+    width: 100%;
+    max-width: 1500px;
     height: 428px;
     border: 1px solid rgb(16, 16, 16);
     border-radius: 20px;
@@ -38,6 +41,7 @@ a {
 }
 
 .footer__ul {
+    max-width: 62.6%;
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -110,6 +114,7 @@ a {
 
 
 .footer__copyright-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

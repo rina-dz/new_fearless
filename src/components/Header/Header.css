@@ -25,7 +25,7 @@
 }
 
 .header__main-logo {
-    width: 127.43px;
+    min-width: 127.43px;
     height: 33.15px;
     background-image: url('../../images/header__logo.svg');
 }
@@ -34,6 +34,7 @@
 
 .header__functional-container {
     height: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,12 +43,12 @@
 
 
 .header__search {
-    width: 674px;
+    width: 74.64%;
     height: 60px;
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin: auto 210px auto 0;
+    margin: auto 0 auto 0;
     justify-content: space-between;
     align-items: center;
     border: 1px solid rgb(15, 15, 15);
@@ -64,7 +65,7 @@
     line-height: 19px;
     text-align: left;
     height: 60px;
-    width: 614px;
+    width: 83%;
     border: none;
     padding: 0;
     margin: 0 30px;

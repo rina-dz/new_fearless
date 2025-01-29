@@ -1,0 +1,184 @@
+.profile {
+    width: 78.13%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    margin: 45px auto 115px;
+}
+
+.profile__back-link {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 0 0 44px 0;
+}
+
+.profile__back-logo {
+    background-size: cover;
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    margin: 0 20px 0 0;
+}
+
+.profile__back-title {
+    color: rgb(14, 14, 14);
+    font-family: Unbounded;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 45px;
+    margin: 0;
+}
+
+.profile__data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 38px;
+}
+
+.profile__info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile__avatar {
+    width: 140px;
+    height: 140px;
+    margin-right: 50px;
+}
+
+.profile__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__name {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 6px 0;
+    align-self: flex-start;
+}
+
+.profile__login {
+    color: rgb(177, 177, 177);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin: 0;
+}
+
+.profile__title {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 6px 0
+}
+
+.profile__info {
+    color: rgb(177, 177, 177);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    margin: 0;
+}
+
+.profile__help-logo {
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+}
+
+.profile__logout-button {
+    width: 220px;
+    height: 80px;
+    border: 1px solid rgb(16, 16, 16);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__logout-logo {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.profile__logout-title {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.profile__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile__navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min-content;
+}
+
+.profile__li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid rgb(16, 16, 16);
+}
+
+.profile__li-img {
+    width: 22px;
+    height: 22px;
+    margin: 0 20px;
+}
+
+.profile__li-title {
+    color: rgb(16, 16, 16);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.profile__info-section {
+    width: 77.33%;
+    margin-left: 42.5px;
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 10px;
+}
+
+
+
+
+/* временный костыль, пока не будет дизайн всего необходимого */
+
+.focused-li {
+    background-color: rgb(16, 16, 16);
+    border-radius: 10px;
+}
+
+.focused-h {
+    color: rgb(255, 255, 255);
+}

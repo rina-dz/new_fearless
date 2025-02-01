@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className='footer__main-container'>
-                <div className='footer__text-container'>
+                <nav className='footer__text-container'>
                     <ul className='footer__ul'>
                         <h3 className='footer__title'>Навигация</h3>
                         <Link to="/"><li className='footer__link'>Главная страница</li></Link>
@@ -29,7 +29,7 @@ function Footer() {
                         <Link className='footer__icon footer__inst-icon' to="https://www.instagram.com/" />
                         <Link className='footer__icon footer__vk-icon' to="https://m.vk.com/" />
                     </ul>
-                </div>
+                </nav>
                 <img className='footer__logo' src={logo} alt='логотип fearless' />
             </div>
             <div className='footer__copyright-container'>

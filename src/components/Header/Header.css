@@ -6,9 +6,17 @@
 }
 
 .header__logo {
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: transparent;
     cursor: pointer;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.header__logo:hover {
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 
 
@@ -58,7 +66,8 @@
 
 .header__search-input {
     color: rgb(79, 79, 79);
-    background-color: rgb(1, 1, 1);;
+    background-color: rgb(1, 1, 1);
+    ;
     font-family: Inter;
     font-size: 16px;
     font-weight: 300;
@@ -73,6 +82,10 @@
 
 .header__search-input:focus {
     outline: none;
+}
+
+.header__search-input:focus::placeholder {
+    opacity: 0;
 }
 
 .header__search-button {
@@ -122,5 +135,24 @@
     height: 27px;
     border: none;
     padding: 0;
+    background-size: cover;
     background-image: url('../../images/menu-logo.svg');
+}
+
+.header__menu-link:hover {
+    animation: scale 1.5s forwards ease-in-out; 
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1, 0.35);
+    }
+
+    to {
+        background-image: url('../../images/menu-logo-hovered.svg');
+    }
 }

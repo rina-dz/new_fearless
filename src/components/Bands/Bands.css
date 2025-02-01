@@ -17,6 +17,13 @@
     margin: 0;
     background-size: cover;
     background-color: transparent;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.bands__img:hover {
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .bands__first-img {

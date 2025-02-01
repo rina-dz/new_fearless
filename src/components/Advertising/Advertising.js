@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 function Advertising() {
 
     return (
-        <div className="ad">
+        <aside className="ad">
             <Link className="ad__button" to="/" />
-        </div>
+        </aside>
     )
 }
 

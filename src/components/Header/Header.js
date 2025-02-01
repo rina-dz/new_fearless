@@ -11,11 +11,13 @@ function Header(props) {
     const [buttonVisibility, changeButtonVisibility] = React.useState(false);
 
     function handleNewValue(e) {
-        changeButtonVisibility(true);
+        //changeButtonVisibility(true);
         setNewValue(e.target.value);
-        value ? changeButtonVisibility(true) : changeButtonVisibility(false);
+        //value ? changeButtonVisibility(true) : changeButtonVisibility(false);
     }
 
+    //onChange={handleNewValue}
+    //value={value || ""}
     //onFocus={() => {changeButtonVisibility(true)}}
 
     return (
@@ -23,9 +25,9 @@ function Header(props) {
             <div className='header__main-container'>
                 <Link className='header__main-logo header__logo' to="/" />
                 <div className='header__functional-container'>
-                    <form className='header__search'>
-                        <input className='header__search-input' placeholder='Начни вводить название товара...'
-                            onChange={handleNewValue} value={value || ""} />
+                    <form className='header__search' onFocus={() => {changeButtonVisibility(true)}}>
+                        <input className='header__search-input' placeholder='Начни вводить название товара...' 
+                        value={value || ""} onChange={handleNewValue} />
                         <img className={buttonVisibility ? "header__search-button" : "header__search-button visibility-off"}
                             id='button' src={search_icon}
                             alt='Удалить' onClick={() => { setNewValue(""); changeButtonVisibility(false) }}

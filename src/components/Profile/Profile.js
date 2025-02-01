@@ -14,6 +14,8 @@ import delivery from '../../images/delivery-logo__default.svg';
 
 function Profile(props) {
 
+    //изменять содержимое при помощи child или отдельных компонентов в зависимости от нажатия в 
+
     return (
         <>
             <section className="profile" >
@@ -21,7 +23,7 @@ function Profile(props) {
                     <img className='profile__back-logo' src={backLogo} alt='назад' />
                     <p className='profile__back-title'>Личный кабинет</p>
                 </Link>
-                <div className='profile__data-container'>
+                <section className='profile__data-container'>
                     <div className='profile__info-container'>
                         <img className='profile__avatar' src={props.avatar} alt='Изображение профиля' />
                         <div className='profile__text-block'>
@@ -41,33 +43,33 @@ function Profile(props) {
                         <img className='profile__logout-logo' src={logout} alt='выход' />
                         <h3 className='profile__logout-title'>Выйти</h3>
                     </Link>
-                </div>
-                <div className='profile__container'>
-                <ul className='profile__navigation'>
-                    <li className='profile__li focused-li'>
-                        <img className='profile__li-img' src={profile} alt='Личный кабинет' />
-                        <h3 className='profile__li-title focused-h'>Личные данные</h3>
-                    </li>
-                    <li className='profile__li'>
-                        <img className='profile__li-img' src={orders} alt='Мои заказы' />
-                        <h3 className='profile__li-title'>Мои заказы</h3>
-                    </li>
-                    <li className='profile__li'>
-                        <img className='profile__li-img' src={favorite} alt='Избранное' />
-                        <h3 className='profile__li-title'>Избранное</h3>
-                    </li>
-                    <li className='profile__li'>
-                        <img className='profile__li-img' src={viewed} alt='Ранее просмотренные' />
-                        <h3 className='profile__li-title'>Ранее просмотренные</h3>
-                    </li>
-                    <li className='profile__li'>
-                        <img className='profile__li-img' src={delivery} alt='Доставка' />
-                        <h3 className='profile__li-title'>Доставка</h3>
-                    </li>
-                </ul>
-                <div className='profile__info-section'></div>
+                </section>
+                <section className='profile__container'>
+                    <ul className='profile__navigation'>
+                        <li className='profile__li focused-li'>
+                            <img className='profile__li-img' src={profile} alt='Личный кабинет' />
+                            <h3 className='profile__li-title focused-h'>Личные данные</h3>
+                        </li>
+                        <li className='profile__li'>
+                            <img className='profile__li-img' src={orders} alt='Мои заказы' />
+                            <h3 className='profile__li-title'>Мои заказы</h3>
+                        </li>
+                        <li className='profile__li'>
+                            <img className='profile__li-img' src={favorite} alt='Избранное' />
+                            <h3 className='profile__li-title'>Избранное</h3>
+                        </li>
+                        <li className='profile__li'>
+                            <img className='profile__li-img' src={viewed} alt='Ранее просмотренные' />
+                            <h3 className='profile__li-title'>Ранее просмотренные</h3>
+                        </li>
+                        <li className='profile__li'>
+                            <img className='profile__li-img' src={delivery} alt='Доставка' />
+                            <h3 className='profile__li-title'>Доставка</h3>
+                        </li>
+                    </ul>
+                    <section className='profile__info-section'></section>
 
-                </div>
+                </section>
             </section>
             <Footer />
         </>

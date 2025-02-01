@@ -3,17 +3,50 @@
     top: 0;
     right: 0;
     height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: flex;
+    justify-content: right;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.visibly {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.menu__main-section {
+    position: relative;
+    z-index: 5;
+    opacity: 1;
+    height: 100vh;
     width: 510px;
     background: rgb(1, 1, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 3;
-    visibility: hidden;
+    transform: translate(150%, 0);
+    transition: transform 0.35s ease;
 }
 
-.visibly {
-    visibility: visible;
+.visible-section {
+    transform: translate(0, 0);
+    transition: transform 0.35s ease;
+}
+
+@keyframes translate {
+    from {
+        transform: translate(150%, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
 }
 
 a {
@@ -36,6 +69,7 @@ a {
 }
 
 .menu__close-logo:hover {
+    transform: scale();
     background-image: url('../../images/menu/close-hovered.svg');
 }
 
@@ -62,14 +96,106 @@ a {
     white-space: nowrap;
 }
 
+
+
+
+
 .menu__link {
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 27px;
+    width: min-content;
+    white-space: nowrap;
+    position: relative;
 }
+
+.menu__link:hover {
+    font-weight: 600;
+}
+
+.menu__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -27px;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.menu__link:hover::before {
+    left: auto;
+    right: -27px;
+}
+
+.cataloge-logo::before {
+    background-image: url(../../images/menu/cataloge-default.svg);
+}
+
+.cataloge-logo:hover::before {
+    background-image: url(../../images/menu/cataloge-hovered.svg);
+}
+
+.support-logo::before {
+    background-image: url(../../images/menu/support-default.svg);
+}
+
+.support-logo:hover::before {
+    background-image: url(../../images/menu/support-hovered.svg);
+}
+
+.order-logo::before {
+    background-image: url(../../images/menu/order-default.svg);
+}
+
+.order-logo:hover::before {
+    background-image: url(../../images/menu/order-hovered.svg);
+}
+
+.info-logo::before {
+    background-image: url(../../images/menu/info-default.svg);
+}
+
+.info-logo:hover::before {
+    background-image: url(../../images/menu/info-hovered.svg);
+}
+
+.mail-logo::before {
+    height: 12.6px;
+    top: 20%;
+    background-image: url(../../images/menu/mail-default.svg);
+}
+
+.mail-logo:hover::before {
+    background-image: url(../../images/menu/mail-hovered.svg);
+}
+
+.number-logo::before {
+    background-image: url(../../images/menu/num-default.svg);
+}
+
+.number-logo:hover::before {
+    background-image: url(../../images/menu/num-hovered.svg);
+}
+
+.adress-logo::before {
+    width: 14px;
+    left: -23px;
+    background-image: url(../../images/menu/adress-default.svg);
+}
+
+.adress-logo:hover::before {
+    right: -23px;
+    background-image: url(../../images/menu/adress-hovered.svg);
+}
+
+
 
 .menu__media {
     display: flex;
@@ -118,4 +244,14 @@ a {
     width: 323.02px;
     height: 84.04px;
     margin: 0 auto 92.96px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
 }

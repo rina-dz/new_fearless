@@ -16,6 +16,11 @@ function Header(props) {
         //value ? changeButtonVisibility(true) : changeButtonVisibility(false);
     }
 
+    function focuseForm() {
+        changeButtonVisibility(true)
+        props.changeSearchVisibility();
+    }
+
     //onChange={handleNewValue}
     //value={value || ""}
     //onFocus={() => {changeButtonVisibility(true)}}
@@ -25,12 +30,12 @@ function Header(props) {
             <div className='header__main-container'>
                 <Link className='header__main-logo header__logo' to="/" />
                 <div className='header__functional-container'>
-                    <form className='header__search' onFocus={() => {changeButtonVisibility(true)}}>
+                    <form className='header__search' onFocus={focuseForm}>
                         <input className='header__search-input' placeholder='Начни вводить название товара...' 
                         value={value || ""} onChange={handleNewValue} />
                         <img className={buttonVisibility ? "header__search-button" : "header__search-button visibility-off"}
                             id='button' src={search_icon}
-                            alt='Удалить' onClick={() => { setNewValue(""); changeButtonVisibility(false) }}
+                            alt='Удалить' onClick={() => { setNewValue(""); changeButtonVisibility(false); props.changeSearchVisibility(); }}
                         />
                     </form>
                     <ul className='header__main-nav'>

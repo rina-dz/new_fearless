@@ -1,0 +1,97 @@
+.search {
+    position: absolute;
+    top: 100px;
+    right: calc(74% - 672px);
+    width: min-content;
+    border-radius: 0px 0px 20px 20px;
+    background: rgb(1, 1, 1);
+    width: 672px;
+    height: 840px;
+    padding-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.visibly {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.search__cards-container {
+    height: 710px;
+    overflow: hidden;
+}
+
+.search__text-container {
+    margin: 31.5px auto;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+}
+
+.search__info {
+    color: rgb(73, 73, 73);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    width: 356px;
+    margin: 0 27px 0 0;
+}
+
+.search__links-container {
+    display: flex;
+    flex-direction: column;
+    width: 227px;
+}
+
+.search__link {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    position: relative;
+    width: min-content;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+
+.search__link:hover {
+    font-weight: 600;
+}
+
+.search__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -27px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.search__link:hover::before {
+    left: auto;
+    right: -27px;
+}
+
+.cataloge-logo::before {
+    background-image: url(../../images/menu/cataloge-default.svg);
+}
+
+.cataloge-logo:hover::before {
+    background-image: url(../../images/menu/cataloge-hovered.svg);
+}
+
+.order-logo::before {
+    background-image: url(../../images/menu/order-default.svg);
+}
+
+.order-logo:hover::before {
+    background-image: url(../../images/menu/order-hovered.svg);
+}

@@ -15,7 +15,7 @@ function SearchPopup(props) {
         <section className={`search ${props.isOpen ? 'visibly' : ''}`}>
             <div className='search__cards-container'>
                 {allItems.map((el) => (
-                    <SearchCard img={el.img} type={el.band} title={el.title} price={el.price} />
+                    <SearchCard img={el.img} type={el.band} title={el.title} price={el.price} key={el.title} />
                 ))}
             </div>
             <div className='search__text-container'>

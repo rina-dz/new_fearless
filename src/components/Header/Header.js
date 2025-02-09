@@ -30,7 +30,6 @@ function Header(props) {
         setNewValue("");
         changeButtonVisibility(false);
         props.changeSearchVisibility();
-        console.log(value)
     }
 
     //onChange={handleNewValue}

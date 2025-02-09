@@ -17,7 +17,7 @@ function CardsList(props) {
             <button className='list__button list__right-arrow' />
             <div className='list__cards-container'>
                 {props.items.map((el) => (
-                    <ItemCard img={el.img} isPreorder={el.isPreorder} band={el.band} title={el.title} price={el.price} />
+                    <ItemCard img={el.img} isPreorder={el.isPreorder} band={el.band} title={el.title} price={el.price} key={el.title} />
                 ))}
             </div>
         </section>

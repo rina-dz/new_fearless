@@ -76,7 +76,7 @@
     padding: 0;
     width: 34px;
     height: 34px;
-    margin: 0;
+    margin: 0 5px 0 0;
     background-size: cover;
     background-color: transparent;
     cursor: pointer;
@@ -84,7 +84,6 @@
 
 .card__cart {
     background-image: url('../../images/cardItem/cart-default.svg');
-    margin: 0;
 }
 
 .card__cart:hover { 
@@ -96,7 +95,6 @@
 }
 
 .card__like {
-    margin: 0 5px 0 0;
     background-image: url('../../images/cardItem/like-default.svg');
 }
 

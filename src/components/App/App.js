@@ -13,9 +13,7 @@ import ateezImg from '../../images/bands/ateez-img.svg';
 import avatar from '../../images/avatar.svg';
 
 
-
 function App() {
-
   const [currentUser, setCurrentUser] = React.useState({});
   const [isMenuPopupOpen, setMenuPopupOpen] = React.useState(false);
   const [isSearchPopupOpen, setSearchPopupOpen] = React.useState(false);

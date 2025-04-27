@@ -1,6 +1,6 @@
 .list {
-    width: min-content;
-    max-width: 100%;
+    width: 97%;
+    max-width: 1500px;
     overflow: hidden;
     margin: 0 auto 95px;
     display: flex;
@@ -49,8 +49,11 @@
 }
 
 .list__cards-container {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    justify-content: center;
+    grid-template-rows: min-content;
     gap: 37.5px;
-    width: min-content;
 }

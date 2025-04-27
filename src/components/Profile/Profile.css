@@ -14,8 +14,10 @@
 }
 
 .profile__back-logo {
-    background-size: cover;
+    background-size: contain;
     background-color: transparent;
+    object-fit: contain;
+    background-position: 5px;
     width: 45px;
     height: 45px;
     margin: 0 20px 0 0;
@@ -113,6 +115,7 @@
 }
 
 .profile__logout-logo {
+    background-repeat: no-repeat;
     width: 18px;
     height: 18px;
     margin-right: 10px;
@@ -133,12 +136,13 @@
 
 .profile__navigation {
     list-style: none;
-    margin: 0;
+    margin: 0 42.5px 0 0;
     padding: 0;
     width: min-content;
 }
 
 .profile__li {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -146,6 +150,40 @@
     height: 80px;
     margin: 0 0 15px 0;
     border-bottom: 1px solid rgb(16, 16, 16);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.25s linear, border-color 0.25s linear;
+}
+
+.profile__li::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.profile__li:nth-child(1):before,
+.profile__li:nth-child(4):before {
+    background-image: url(../../images/button_background-1.png);
+}
+
+.profile__li:nth-child(2):before,
+.profile__li:nth-child(5):before {
+    background-image: url(../../images/button_background-3.png);
+}
+
+.profile__li:nth-child(3):before {
+    background-image: url(../../images/button_background-2.png);
+}
+
+.profile__focused-li {
+    background: transparent;
+    border: white;
+    transition: background-color 0.25s linear;
 }
 
 .profile__li-img {
@@ -160,25 +198,4 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-}
-
-.profile__info-section {
-    width: 77.33%;
-    margin-left: 42.5px;
-    border: 1px solid rgb(162, 162, 162);
-    border-radius: 10px;
-}
-
-
-
-
-/* временный костыль, пока не будет дизайн всего необходимого */
-
-.focused-li {
-    background-color: rgb(16, 16, 16);
-    border-radius: 10px;
-}
-
-.focused-h {
-    color: rgb(255, 255, 255);
 }

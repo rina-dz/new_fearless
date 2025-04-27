@@ -1,0 +1,93 @@
+.data-section {
+    position: relative;
+    width: 77.33%;
+    max-width: 1160px;
+    height: 460px;
+    background-image: url(../../images/profile_background.png);
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.data-section__dl {
+    display: grid;
+    height: min-content;
+    grid-template-columns: repeat(2, min-content);
+    grid-auto-rows: min-content;
+    row-gap: 35px;
+    column-gap: 90px;
+    margin: 30.5px 0 0 47px;
+}
+
+.data-section__dt {
+    width: 134px;
+    color: rgb(16, 16, 16);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+
+.data-section__dd {
+    width: min-content;
+    white-space: nowrap;
+    margin: 0;
+    color: rgb(16, 16, 16);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    align-items: end;
+}
+
+.data-section__dd-icon {
+    content: '';
+    width: 29.87px;
+    height: 21.58px;
+    background-image: url(../../images/hidden_password-icon.svg);
+    background-size: cover;
+    background-color: transparent;
+    margin-left: 15px;
+}
+
+.data-section__button {
+    position: absolute;
+    width: 25.86%;
+    height: 80px;
+    margin: 0 0 20px 20px;
+    padding: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-section__button-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.data-section__button-text {
+    white-space: nowrap;
+    width: min-content;
+    margin: 0;
+    color: rgb(162, 162, 162);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+}

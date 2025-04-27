@@ -3,7 +3,7 @@ import './BandPage.css';
 import Advertising from "../Advertising/Advertising";
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
-import backLogo from '../../images/back-logo.svg';
+import backLogo from '../../images/back-logo.png';
 import ItemCard from '../ItemCard/ItemCard';
 import AllItems from '../../vendor/allItems';
 import filterArrow from '../../images/filter-arrow.svg';

@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import backLogo from '../../images/back-logo.svg';
 import './Profile.css';
-import Footer from '../Footer/Footer';
+import backLogo from '../../images/back-logo.png';
 import help from '../../images/help-logo.svg';
 import logout from '../../images/logout-logo__default.svg';
-import profile from '../../images/profile-logo__hovered.svg';
+import profile from '../../images/profile-logo__default.svg';
 import orders from '../../images/orders-logo__default.svg';
 import favorite from '../../images/favorite-logo__default.svg';
 import viewed from '../../images/eye-logo__default.svg';
 import delivery from '../../images/delivery-logo__default.svg';
-
+import Footer from '../Footer/Footer';
+import PersonalData from '../PersonalData/PersonalData';
+import MyOrders from '../MyOrders/MyOrders';
+import Favourites from '../Favourites/Favourites';
+import Viewed from '../Viewed/Viewed';
+import Delivery from '../Delivery/Delivery';
 
 function Profile(props) {
+    const [child, changeChild] = useState('PersonalData');
 
-    //изменять содержимое при помощи child или отдельных компонентов в зависимости от нажатия в 
+    //className={`menu ${props.isOpen ? 'visibly' : ''}`} 
 
     return (
         <>
@@ -46,29 +51,43 @@ function Profile(props) {
                 </section>
                 <section className='profile__container'>
                     <ul className='profile__navigation'>
-                        <li className='profile__li focused-li'>
+                        <li className={`profile__li ${child === 'PersonalData' ? 'profile__focused-li' : ""}`}
+                            onClick={() => { changeChild('PersonalData') }}>
                             <img className='profile__li-img' src={profile} alt='Личный кабинет' />
-                            <h3 className='profile__li-title focused-h'>Личные данные</h3>
+                            <h3 className='profile__li-title'>Личные данные</h3>
                         </li>
-                        <li className='profile__li'>
+                        <li className={`profile__li ${child === 'MyOrders' ? 'profile__focused-li' : ""}`}
+                            onClick={() => { changeChild('MyOrders') }}>
                             <img className='profile__li-img' src={orders} alt='Мои заказы' />
                             <h3 className='profile__li-title'>Мои заказы</h3>
                         </li>
-                        <li className='profile__li'>
+                        <li className={`profile__li ${child === 'Favourites' ? 'profile__focused-li' : ""}`}
+                            onClick={() => { changeChild('Favourites') }}>
                             <img className='profile__li-img' src={favorite} alt='Избранное' />
                             <h3 className='profile__li-title'>Избранное</h3>
                         </li>
-                        <li className='profile__li'>
+                        <li className={`profile__li ${child === 'Viewed' ? 'profile__focused-li' : ""}`}
+                            onClick={() => { changeChild('Viewed') }}>
                             <img className='profile__li-img' src={viewed} alt='Ранее просмотренные' />
                             <h3 className='profile__li-title'>Ранее просмотренные</h3>
                         </li>
-                        <li className='profile__li'>
+                        <li className={`profile__li ${child === 'Delivery' ? 'profile__focused-li' : ""}`}
+                            onClick={() => { changeChild('Delivery') }}>
                             <img className='profile__li-img' src={delivery} alt='Доставка' />
                             <h3 className='profile__li-title'>Доставка</h3>
                         </li>
                     </ul>
-                    <section className='profile__info-section'></section>
-
+                    {child === 'PersonalData' ?
+                        <PersonalData /> :
+                        child === 'MyOrders' ?
+                            <MyOrders /> :
+                            child === 'Favourites' ?
+                                <Favourites /> :
+                                child === 'Viewed' ?
+                                    <Viewed /> :
+                                    child === 'Delivery' ?
+                                        <Delivery /> : <></>
+                    }
                 </section>
             </section>
             <Footer />
